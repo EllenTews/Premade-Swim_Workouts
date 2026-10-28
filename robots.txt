@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ellentews.github.io/Premade-Swim_Workouts/sitemap.xml
