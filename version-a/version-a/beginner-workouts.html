@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore beginner swim workouts with simple swim sets that help new swimmers build confidence, practice technique, and enjoy time in the water.">
+  <meta name="keywords" content="beginner swim workouts, swim workouts for beginners">
+  <title>Beginner Swim Workouts | BlueCurrent Swim Co.</title>
+  <style>
+    :root {
+      --navy: #123047;
+      --blue: #087e9b;
+      --aqua: #dff5f5;
+      --cream: #fbfaf6;
+      --white: #ffffff;
+      --text: #263b48;
+      --muted: #536a77;
+      --border: #d5e5e9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+
+    .notice {
+      padding: 12px 20px;
+      background: #edf4f5;
+      color: var(--navy);
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .header-inner, main, .footer-inner {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    .header-inner { padding: 22px 0 0; }
+
+    .brand {
+      margin: 0;
+      color: var(--white);
+      font-size: 1.75rem;
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      margin: 2px 0 18px;
+      color: #c9e8ee;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0 0 18px;
+    }
+
+    nav a {
+      display: inline-block;
+      color: var(--white);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover, nav a:focus, nav a[aria-current="page"] {
+      background: var(--blue);
+      outline-offset: 3px;
+    }
+
+    main { padding-bottom: 44px; }
+
+    .hero {
+      background: var(--aqua);
+      padding: 48px 28px;
+      border-radius: 0 0 18px 18px;
+      margin-bottom: 34px;
+    }
+
+    .hero h2 {
+      max-width: 700px;
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.12;
+    }
+
+    .hero p { max-width: 700px; font-size: 1.08rem; }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      border-radius: 7px;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .button:hover, .button:focus { background: var(--navy); }
+
+    h2, h3 { color: var(--navy); line-height: 1.25; }
+
+    section { margin-bottom: 42px; }
+
+    .section-heading { margin-bottom: 8px; }
+
+    .workout {
+      margin-top: 20px;
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(18, 48, 71, 0.04);
+    }
+
+    .workout h3 { margin-top: 0; }
+
+    .workout-label {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-bottom: 8px;
+      border-radius: 6px;
+      background: var(--aqua);
+      color: var(--navy);
+      font-size: 0.88rem;
+      font-weight: bold;
+    }
+
+    .workout li { margin-bottom: 8px; }
+
+    .tips {
+      padding: 24px;
+      background: #f0f5f4;
+      border-radius: 12px;
+    }
+
+    .page-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--blue);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .page-link:hover, .page-link:focus {
+      border-color: var(--blue);
+      background: var(--aqua);
+    }
+
+    footer {
+      padding: 26px 0;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer h2 { color: var(--white); }
+
+    footer a { color: #bdeaf0; }
+
+    .footer-inner p { margin: 8px 0; }
+
+    footer .notice {
+      margin-top: 18px;
+      border-radius: 6px;
+      color: var(--navy);
+    }
+
+    @media (max-width: 760px) {
+      .hero { padding: 36px 22px; }
+      .header-inner { padding-top: 18px; }
+      nav { gap: 4px; }
+      nav a { padding: 8px; }
+      .page-links { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+
+  <header>
+    <div class="header-inner">
+      <h1 class="brand">BlueCurrent Swim Co.</h1>
+      <p class="tagline">Find your rhythm. Build your confidence. Enjoy the water.</p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="beginner-workouts.html" aria-current="page">Beginner Swim Workouts</a>
+        <a href="triathlon.html">Beginner Triathlon Sets</a>
+        <a href="parent-child.html">Parent-Child Lessons</a>
+        <a href="recovery.html">Long-Course Recovery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Start where you are</p>
+      <h2>Beginner Swim Workouts</h2>
+      <p>New to structured swimming? These simple swim workouts break each session into manageable sets, helping you build confidence, practice at your own pace, and enjoy every lap.</p>
+      <a class="button" href="#workout-plans">Explore Beginner Workouts</a>
+    </section>
+
+    <section>
+      <p class="eyebrow">A few simple steps</p>
+      <h2 class="section-heading">How to get started</h2>
+      <p>Keep your first sessions comfortable. Focus on steady movement and good habits rather than speed or distance.</p>
+
+      <div class="workout">
+        <h3>🗓️ Choose a realistic goal</h3>
+        <p>Start with a short session and take breaks whenever you need them. Add distance gradually as you become more comfortable.</p>
+      </div>
+      <div class="workout">
+        <h3>💧 Focus on technique</h3>
+        <p>Swim at a pace that lets you stay relaxed and in control. Rest between lengths instead of rushing through the workout.</p>
+      </div>
+      <div class="workout">
+        <h3>✅ Track your progress</h3>
+        <p>Record the distance you complete and how you feel. Consistent, comfortable practice matters more than one fast session.</p>
+      </div>
+    </section>
+
+    <section id="workout-plans">
+      <p class="eyebrow">Pick your starting point</p>
+      <h2 class="section-heading">Three beginner swim workouts</h2>
+      <p>Distances are examples, not requirements. Adjust them to your ability, pool length, and comfort level. Rest as needed between each repeat.</p>
+
+      <article class="workout">
+        <span class="workout-label">About 200–300 yards/meters</span>
+        <h3>1. First-Laps Workout</h3>
+        <p>A gentle introduction to following a structured swim set.</p>
+        <ol>
+          <li><strong>Warm-up:</strong> 4 easy lengths, resting between lengths as needed.</li>
+          <li><strong>Main set:</strong> 4 × 1 length at a relaxed pace, with a comfortable rest after each length.</li>
+          <li><strong>Cool-down:</strong> 2 easy lengths or a few minutes of gentle movement in the water.</li>
+        </ol>
+      </article>
+
+      <article class="workout">
+        <span class="workout-label">About 300–500 yards/meters</span>
+        <h3>2. Build Your Endurance</h3>
+        <p>Practice swimming repeated short distances at a steady effort.</p>
+        <ol>
+          <li><strong>Warm-up:</strong> 4 easy lengths.</li>
+          <li><strong>Main set:</strong> 6 × 1 length at a comfortable pace. Rest until your breathing feels controlled.</li>
+          <li><strong>Optional challenge:</strong> If you feel comfortable, add 2 more lengths with a rest between them.</li>
+          <li><strong>Cool-down:</strong> 2 easy lengths.</li>
+        </ol>
+      </article>
+
+      <article class="workout">
+        <span class="workout-label">About 250–400 yards/meters</span>
+        <h3>3. Mix It Up</h3>
+        <p>Add variety while keeping the overall session easy.</p>
+        <ol>
+          <li><strong>Warm-up:</strong> 4 easy lengths using a stroke you can swim comfortably.</li>
+          <li><strong>Main set:</strong> 2 × 1 length of relaxed swimming, followed by 2 × 1 length focusing on smooth, controlled technique.</li>
+          <li><strong>Repeat:</strong> Complete the sequence one more time if you still feel comfortable.</li>
+          <li><strong>Cool-down:</strong> 2 easy lengths.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="tips">
+      <p class="eyebrow">Swim smart</p>
+      <h2>Tips for a better first session</h2>
+      <h3>Safety comes first</h3>
+      <p>Swim in a supervised pool or with a qualified instructor, follow facility rules, and never swim alone. Stop if you feel dizzy, unusually short of breath, or unwell. If you are not yet comfortable swimming a length independently, ask a qualified instructor for guidance before trying these workouts.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Explore More Swim Plans</h2>
+      <p>Planning a workout for yourself? Try our <a href="triathlon.html">beginner triathlon swim set</a> or explore <a href="recovery.html">gentle recovery swimming in a long-course pool</a>. Looking for a family activity? Browse our <a href="parent-child.html">free parent-child swim lesson plan</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <h2>BlueCurrent Swim Co.</h2>
+      <p>Swim plans for beginners, families, and everyday athletes.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="beginner-workouts.html" aria-current="page">Beginner Swim Workouts</a>
+        <a href="triathlon.html">Beginner Triathlon Sets</a>
+        <a href="parent-child.html">Parent-Child Lessons</a>
+        <a href="recovery.html">Long-Course Recovery</a>
+      </nav>
+      <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+    </div>
+  </footer>
+</body>
+</html>
